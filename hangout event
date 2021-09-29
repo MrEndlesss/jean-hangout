@@ -1,0 +1,152 @@
+#introduction phase#
+
+proceed = "(Enter to proceed)"
+print("This is a hangout event based on jean from Genshin Impact " + "you would have to answer a,b or c")
+input(proceed + "")
+print("you will be given 5 health, if you pick the wrong choice you lose one")
+input(proceed + "")
+
+print("Act I")
+input(proceed)
+print("You're in your way to the cathedral until you see a stranger standing by")
+input(proceed + "")
+print("she glances at you")
+input(proceed + "")
+print("???:Hello there traveller! you seem like you're not from around here")
+input(proceed + "")
+name = input("???:so what do you go by?(Type your username)_")
+print("???:well hello there " + name)
+input(proceed + "")
+print("Jean:nice to meet you my name is Jean the captain of the knights of favonius! Welcome to Mondstadt")
+input(proceed + "")
+
+#phase two#
+
+sister = "a)im here for my sister."
+you = "b)none of your business."
+namejean = "Jean:"
+current_health = "Health: "
+h = 5
+h1 = 4
+h2 = 3
+h3 = 2
+h4 = 1
+h_count = 5
+c_count = 0
+proceed = "(Enter to proceed)"
+lines = "-------------------"
+lost = "you just lost one health."
+
+print("Act II:Headquarters")
+
+print(current_health + str(h_count))
+print(lines)
+print(namejean + "so what are you here for??...... ")
+print(sister)
+print(you)
+jean1 = input(":")
+
+if jean1 == "b":
+    print(lost)
+    h_count = h_count - 1
+    print(current_health + str(h_count))
+    print(lines)
+    print(namejean + "woah that's rude!?")
+
+elif jean1 == "a":
+    print(current_health + str(h_count))
+    print(lines)
+    print(namejean+ "i hope you find her soon!")
+
+else:
+    print("Error")
+    input(proceed)
+    if jean1 == "b":
+        print(lost)
+        h_count = h_count - 1
+        print(current_health + str(h_count))
+        print(lines)
+        print(namejean + "woah that's rude!?")
+
+    elif jean1 == "a":
+        print(current_health + str(h_count))
+        print(lines)
+        print(namejean + "i hope you find her soon!")
+
+input(proceed)
+if h_count == 4:
+    print(current_health + str(h_count))
+    print(lines)
+
+elif h_count == 5:
+    print(current_health + str(h_count))
+    print(lines)
+
+print(namejean + "anyways im just heading to the headquarters, come with me " + name)
+input(proceed)
+print("""
+-
+*both of you went to the headquarters of the knights of favonious*
+-
+ """)
+
+#phase 3#
+
+print("Act III")
+input(proceed)
+fight1 = """
+-
+*you killed the hilichurl*
+-
+"""
+
+print(current_health + str(h_count))
+print(lines)
+
+print("here you see different KOF members including kaeya, klee and lisa")
+input(proceed)
+
+print(current_health + str(h_count))
+print(lines)
+
+input(namejean + """i have a task for you why don't you clear out a nearby camp and comeback to me?
+ a) sure.
+ :""")
+
+print("""
+-
+*you take a stroll outside mondstadt until you see a hilichurl*
+-
+""")
+print(current_health + str(h_count))
+print(lines)
+fight = input("""perform your attack
+a)basic atk a
+b) elmntl atk.
+:""")
+if fight == "a":
+    h_count = h_count - 1
+    print(current_health + str(h_count))
+    print(lines)
+
+    print("""
+    -
+    *you took dmg from that hilichurl*
+    -
+    """)
+    input("b)elmntal atk._")
+    print(fight1)
+
+elif fight == "b":
+    print(current_health + str(h_count))
+    print(lines)
+    print(fight1)
+print("""
+-
+*thats everything comeback to the headquarters*
+- 
+""")
+input(proceed)
+#phase 4#
+
+
